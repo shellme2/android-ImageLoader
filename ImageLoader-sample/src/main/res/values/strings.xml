@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ImageLoader-sample</string>
+
+    <string name="placeHolderResId">是否添加占位图</string>
+    <string name="errorResId">是否添加异常显示图片</string>
+    <string name="scaleType">ImageView图片显示属性</string>
+    <string name="targetSize">目标图片宽高</string>
+    <string name="priority">优先级</string>
+    <string name="cacheStrategy">缓存策略</string>
+    <string name="config">图片配置</string>
+    <string name="transformations">图片转换</string>
+    <string name="callBack">回调</string>
+    <string name="isFade">是否渐进显示</string>
+    <string name="debug">是否开启debug模式</string>
+    <string name="testUrl">是否随机加载图片</string>
+    <string name="clearMemory">清除内存缓存</string>
+    <string name="clearDisk">清除磁盘缓存</string>
+    <string name="processLoad">加载图片</string>
+</resources>

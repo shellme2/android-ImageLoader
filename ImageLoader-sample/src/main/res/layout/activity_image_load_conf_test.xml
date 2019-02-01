@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:showDividers="beginning|middle|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageLoadTestIv"
+                    android:layout_width="1000px"
+                    android:layout_height="1000px"
+                    android:background="#5d5d5d" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imageLoadTestIv2"-->
+                <!--android:layout_width="500px"-->
+                <!--android:layout_height="500px"-->
+                <!--android:background="#5d5d5d" />-->
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/processLoad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="processLoad"
+                android:text="@string/processLoad" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/placeHolderResId"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/placeHolderResIdSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/bool"
+                    android:prompt="@string/placeHolderResId" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/errorResId"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/errorResIdSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/bool"
+                    android:prompt="@string/errorResId" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/scaleType"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/scaleTypeSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/scaleType"
+                    android:prompt="@string/scaleType" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/targetSize"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/targetSizeSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/targetSize"
+                    android:prompt="@string/targetSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/priority"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/prioritySpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/priority"
+                    android:prompt="@string/priority" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/cacheStrategy"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/cacheStrategySpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/cacheStrategy"
+                    android:prompt="@string/cacheStrategy" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/config"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/configSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/bool"
+                    android:prompt="@string/config" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/transformations"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/transformationsSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/transformations"
+                    android:prompt="@string/transformations" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/callBack"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/callBackSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/bool"
+                    android:prompt="@string/callBack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/isFade"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/isFadeSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/bool"
+                    android:prompt="@string/isFade" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/debug"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/debugSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/bool"
+                    android:prompt="@string/debug" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/testUrl"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/testUrlSpinner"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/bool"
+                    android:prompt="@string/testUrl" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/clearMemoryCache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearMemory"
+                android:text="@string/clearMemory" />
+
+            <Button
+                android:id="@+id/clearDiskCache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearDisk"
+                android:text="@string/clearDisk" />
+
+            <EditText
+                android:id="@+id/imageInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="picasso" />
+
+        <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="fresco" />
+
+        <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="glide" />
+
+        <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="imageload" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/picasso"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/glide"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageLoader"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="0.5"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/processJpeg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片类型-jpg"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/processPng"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片类型-png"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/processWebp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片类型-webp"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/processXml"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片类型-xml"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/processGif"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片类型-gif"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/processUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片来源-url"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/processR"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片来源-R"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/processAssets"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片来源-assets"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/processFile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="图片来源-file"
+                android:textSize="13sp" />
+
+            <!--<Button-->
+            <!--android:id="@+id/clearCache"-->
+            <!--android:layout_width="0.0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="clearCache"-->
+            <!--android:textSize="13sp" />-->
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

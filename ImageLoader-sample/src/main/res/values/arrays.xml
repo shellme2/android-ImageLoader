@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scaleType">
+        <item>FIT_CENTER</item>
+        <item>FIT_START</item>
+        <item>FIT_END</item>
+        <item>CENTER</item>
+        <item>CENTER_CROP</item>
+        <item>CENTER_INSIDE</item>
+        <item>FIT_XY</item>
+        <item>MATRIX</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>NORMAL</item>
+        <item>LOW</item>
+        <item>HIGH</item>
+    </string-array>
+    <string-array name="cacheStrategy">
+        <item>ALL</item>
+        <item>MEMORY</item>
+        <item>DISK</item>
+        <item>NONE</item>
+    </string-array>
+    <string-array name="bool">
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="transformations">
+        <item>null</item>
+        <item>圆角</item>
+        <item>模糊</item>
+        <item>圆形</item>
+    </string-array>
+    <string-array name="targetSize">
+        <item>原图</item>
+        <item>100*100</item>
+        <item>200*200</item>
+        <item>300*300</item>
+        <item>500*500</item>
+    </string-array>
+</resources>

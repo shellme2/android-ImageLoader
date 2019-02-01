@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="picassoTest"-->
+        <!--android:text="picassoTest" />-->
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="frescoTest"-->
+        <!--android:text="frescoTest" />-->
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="glideTest"-->
+        <!--android:text="glideTest" />-->
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="BfcImageLoaderTest"
+        android:text="BfcImageLoaderTest" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="loadTypeTest"
+            android:text="图片来源及图片类型" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="loadPriorityTest"
+            android:text="图片优先级测试" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="BfcImageLoaderConfTest"
+            android:text="图片加载自定义配置" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="gridViewTest"
+            android:text="批量图片加载" />
+
+        <Button
+            android:id="@+id/clearMemoryCache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearMemory"
+            android:text="@string/clearMemory" />
+
+        <Button
+            android:id="@+id/clearDiskCache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clearDisk"
+            android:text="@string/clearDisk" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buildTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="start" />
+</RelativeLayout>

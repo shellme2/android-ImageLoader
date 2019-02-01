@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imageloader">
+
+    <application
+        android:name=".BfcImageLoaderApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- <meta-data -->
+        <!-- android:name="com.example.imageloader.open.GlideCacheModule" -->
+        <!-- android:value="GlideModule" /> -->
+
+        <activity
+            android:name=".main.BfcImageLoaderDemoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".open.PicassoTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".open.FrescoTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".open.GlideTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.LoadTypeTestActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".main.SampleGridViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.ImageLoadTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.ImageLoadConfTestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".main.LoadPriorityTestActivity"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>
